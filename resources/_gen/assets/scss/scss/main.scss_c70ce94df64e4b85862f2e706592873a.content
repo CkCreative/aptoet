@@ -27,71 +27,70 @@ nav {
       nav div ul li:not(:last-child) {
         padding-right: 5px; }
 
-.z_grid {
+.z_grid .z_grid_item {
+  width: 33%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-rows: minmax(min-content, max-content);
-  gap: 2rem;
-  padding: 1rem; }
-  .z_grid .z_grid_item {
-    display: grid;
+  margin: calc(1%/8);
+  align-items: center; }
+  @media screen and (max-width: 800px) {
+    .z_grid .z_grid_item {
+      width: 49%;
+      margin: calc(2%/6); } }
+  @media screen and (max-width: 600px) {
+    .z_grid .z_grid_item {
+      width: 99%;
+      margin: calc(1%/2); } }
+  .z_grid .z_grid_item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -2; }
+  .z_grid .z_grid_item .z_message {
+    font-size: 18px;
+    font-weight: 200;
+    background: rgba(213, 214, 221, 0.507);
+    color: #072346f5;
+    height: 100%;
+    width: 100%;
+    display: flex;
     justify-content: stretch;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    border-radius: 1rem 1rem 0 0;
-    border-bottom: 10px solid #072346f5; }
-    .z_grid .z_grid_item img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      z-index: -2; }
-    .z_grid .z_grid_item .z_message {
-      font-size: 18px;
-      font-weight: 200;
-      background: rgba(213, 214, 221, 0.507);
-      color: #072346f5;
-      height: 100%;
-      width: 100%;
+    align-items: stretch;
+    line-height: 1.5; }
+    .z_grid .z_grid_item .z_message div {
       display: flex;
-      justify-content: stretch;
-      align-items: stretch;
-      line-height: 1.5; }
-      .z_grid .z_grid_item .z_message div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: start;
-        font-family: 'Port Lligat Sans', sans-serif;
-        padding: 3rem; }
-        .z_grid .z_grid_item .z_message div span {
-          display: block;
-          width: 100%;
-          text-align: right;
-          font-family: 'Grand Hotel', cursive; }
-    .z_grid .z_grid_item .class_1 {
-      background-color: #eef7ff; }
-    .z_grid .z_grid_item .class_2 {
-      background-color: #fff2f2; }
-    .z_grid .z_grid_item .class_3 {
-      background-color: #fde8f9; }
-    .z_grid .z_grid_item .class_4 {
-      background-color: #fff7dc; }
-    .z_grid .z_grid_item .class_5 {
-      background-color: #ffe9e0; }
-    .z_grid .z_grid_item .class_6 {
-      background-color: #f0ecfd; }
-    .z_grid .z_grid_item .class_7 {
-      background-color: #f6e7fd; }
-    .z_grid .z_grid_item .class_8 {
-      background-color: #e0fcef; }
-    .z_grid .z_grid_item .class_9 {
-      background-color: #eafdea; }
-    .z_grid .z_grid_item .class_0 {
-      background-color: #fff9e9; }
+      flex-direction: column;
+      justify-content: center;
+      text-align: start;
+      font-family: 'Port Lligat Sans', sans-serif;
+      padding: 3rem; }
+      .z_grid .z_grid_item .z_message div span {
+        display: block;
+        width: 100%;
+        text-align: right;
+        font-family: 'Grand Hotel', cursive; }
+  .z_grid .z_grid_item .class_1 {
+    background-color: #eef7ff; }
+  .z_grid .z_grid_item .class_2 {
+    background-color: #fff2f2; }
+  .z_grid .z_grid_item .class_3 {
+    background-color: #fde8f9; }
+  .z_grid .z_grid_item .class_4 {
+    background-color: #fff7dc; }
+  .z_grid .z_grid_item .class_5 {
+    background-color: #ffe9e0; }
+  .z_grid .z_grid_item .class_6 {
+    background-color: #f0ecfd; }
+  .z_grid .z_grid_item .class_7 {
+    background-color: #f6e7fd; }
+  .z_grid .z_grid_item .class_8 {
+    background-color: #e0fcef; }
+  .z_grid .z_grid_item .class_9 {
+    background-color: #eafdea; }
+  .z_grid .z_grid_item .class_0 {
+    background-color: #fff9e9; }
 
 .footer {
   width: 100%;

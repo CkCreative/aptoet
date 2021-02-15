@@ -5,4 +5,15 @@
         const date = new Date().getFullYear().toString()
         document.getElementById("year").innerText = date
     </script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+
+    <script>
+        var elem = document.querySelector('.z_grid');
+        var msnry = new Masonry( elem, {
+        // options
+        itemSelector: '.z_grid_item',
+        //columnWidth: 300
+        });
+    </script>
+
 </div>
