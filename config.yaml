@@ -1,0 +1,7 @@
+baseURL: "/"
+languageCode: "en-us"
+title: "Aptoet"
+theme: "zenama"
+
+params:
+  thetheme: "default"

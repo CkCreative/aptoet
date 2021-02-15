@@ -1,0 +1,13 @@
+.theme_default {
+    
+    nav {
+        border-top-color: _palette(accent-blue);
+        background-color: _palette(primary);
+        color: _palette(accent-white);
+        
+        li:hover{
+            color: _palette(accent-orange);
+        }
+    }
+  
+}

@@ -1,0 +1,28 @@
+$palette: (
+  accent-green:        #3cb464,
+  accent-blue:   #108afb,
+  accent-black:  #323232,
+  accent-red:    #a51c30,
+  accent-orange:    #ff8800f5,
+  accent-white:    #f7f6fa,
+  primary:    #011124f5,
+  text-color:    #072346f5,
+  bg-one:    #eef7ff,
+  bg-two:    #fff2f2,
+  bg-three:    #fde8f9,
+  bg-four:    #fff7dc,
+  bg-five:    #ffe9e0,
+  bg-six:    #f0ecfd,
+  bg-seven:    #f6e7fd,
+  bg-eight:    #e0fcef,
+  bg-nine:    #eafdea,
+  bg-ten:    #fff9e9,
+);
+
+
+@import "general";
+@import "functions";
+@import "header";
+@import "grid";
+@import "footer";
+@import "themes";

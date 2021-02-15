@@ -1,0 +1,89 @@
+.z_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: minmax(min-content, max-content);
+    gap: 2rem;
+    padding: 1rem;
+
+    .z_grid_item {
+        display: grid;
+        justify-content: stretch;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        border-radius: 1rem 1rem 0 0;
+        border-bottom: 10px solid _palette(text-color);
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        .z_message {
+            font-size: 18px;
+            font-weight: 200;
+            background: rgba(213, 214, 221, 0.507);
+            color: _palette(text-color);
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: stretch;
+            align-items: stretch;
+            
+            line-height: 1.5;
+           
+            
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: start;
+                font-family: 'Port Lligat Sans', sans-serif;
+                padding: 3rem;
+
+                span {
+                    display: block;
+                    width: 100%;
+                    text-align: right;
+                    font-family: 'Grand Hotel', cursive;
+                }
+            }
+        }
+
+        .class_1 {
+           background-color: _palette(bg-one); 
+        }
+        .class_2 {
+           background-color: _palette(bg-two); 
+        }
+        .class_3 {
+           background-color: _palette(bg-three); 
+        }
+        .class_4 {
+           background-color: _palette(bg-four); 
+        }
+        .class_5 {
+           background-color: _palette(bg-five); 
+        }
+        .class_6 {
+           background-color: _palette(bg-six); 
+        }
+        .class_7 {
+           background-color: _palette(bg-seven); 
+        }
+        .class_8 {
+           background-color: _palette(bg-eight); 
+        }
+        .class_9 {
+           background-color: _palette(bg-nine); 
+        }
+        .class_0 {
+           background-color: _palette(bg-ten); 
+        }
+    }
+}

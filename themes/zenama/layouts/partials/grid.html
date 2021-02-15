@@ -1,0 +1,14 @@
+<div class="z_grid">
+    {{range (where .Site.RegularPages.ByTitle "Section" "posts" )}}
+        {{/*  {{$this := (string .Params.number)}}
+        {{$class := cond (lt (int $this) 9) $this (substr $this 1)}}  */}}
+    <div class="z_grid_item">
+        <div class="z_message class_{{ .Params.number }}">
+            <div>
+                {{ .Content }}
+                <span>Mike CK</span>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+</div>
