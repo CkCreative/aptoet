@@ -24,16 +24,6 @@
       //   border-radius: 1rem 1rem 0 0;
       //   border-bottom: 10px solid _palette(text-color);
 
-        img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            z-index: -2;
-        }
-
         .z_message {
             font-size: 18px;
             font-weight: 200;
@@ -42,8 +32,8 @@
             height: 100%;
             width: 100%;
             display: flex;
-            justify-content: stretch;
-            align-items: stretch;
+            justify-content: center;
+            align-items: center;
             
             line-height: 1.5;
            
